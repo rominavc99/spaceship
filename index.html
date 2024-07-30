@@ -17,39 +17,49 @@
             </a>
           </header>
       
-          <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div class="p-5 mb-4 bg-body-tertiary rounded-3 d-flex">
             <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Model your own space.</h1>
-              <p class="col-md-8 fs-4">Did you know that if you have a computer you basically have the power to create all the things you could ever imagine? Cause you actually can!</p>
-              <button class="btn btn-primary btn-lg" type="button">How to build the outer space?</button>
-            </div>
+              <div> 
+                  <h1 class="display-5 fw-bold">Model your own space.</h1>
+                  <p class="col-md-8 fs-4">Did you know that if you have a computer you basically have the power to create all the things
+                    you could ever imagine? Cause you actually can!</p>
+                  <button class="btn btn-primary btn-lg" type="button">How to build the outer space?</button>
+                  </div>
+              </div>
+              <div>
+                <video src="assets/spaceship.mp4" autoplay loop muted width="800" height="600"></video>
+              </div>
           </div>
       
           <div class="row align-items-md-stretch">
             <div class="col-md-6">
               <div class="h-100 p-5 text-bg-dark rounded-3">
                 <h2>A power of your own.</h2>
-                <p>Technology has enpowered us with the tools to create our own world, through 3D modeling and coding you can pretty much make whatever thing on your mind.</p>
-                <button class="btn btn-outline-light" type="button">Learn now</button>
+                  <p>Technology has enpowered us with the tools to create our own world, through 3D modeling and coding you can pretty
+                    much make whatever thing on your mind.</p>
+                  <button class="btn btn-outline-light" type="button">Learn now</button> 
+
               </div>
             </div>
             <div class="col-md-6">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                    <model-viewer src="./spaceship4.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
-                      <div class="progress-bar hide" slot="progress-bar">
-                          <div class="update-bar"></div>
-                      </div>
-                      <button slot="ar-button" id="ar-button">
-                          View in your space
-                      </button>
-                      <div id="ar-prompt">
-                          <img src="ar_hand_prompt.png">
-                      </div>
-                    </model-viewer> 
+              <div class="h-100 p-5 text-bg-dark border rounded-3">
+                     <h2>3D Modeling your ideas.</h2>
+                      <model-viewer src="./spaceship4.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="ar_hand_prompt.png">
+                        </div>
+                      </model-viewer> 
               </div>
             </div>
+            
           </div>
-      
+
           <footer class="pt-3 mt-4 text-body-secondary border-top">
             © 2024
           </footer>
